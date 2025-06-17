@@ -7,6 +7,8 @@ ARG JAR_FILE=target/*.jar
 # Copy the JAR file into the container
 COPY ${JAR_FILE} app.jar
 
+ENV PORT=8761
+
 EXPOSE 8761
 
 # Run the JAR file
