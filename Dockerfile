@@ -7,7 +7,7 @@ ARG JAR_FILE=target/*.jar
 # Copy the JAR file into the container
 COPY ${JAR_FILE} app.jar
 
-EXPOSE 8080
+EXPOSE 8761
 
 # Run the JAR file
 ENTRYPOINT ["java","-jar","/app.jar"]
