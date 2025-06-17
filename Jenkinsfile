@@ -47,6 +47,7 @@ pipeline {
 
                    $GCLOUD_PATH/gcloud run deploy $APP_NAME \
                      --image="us-central1-docker.pkg.dev/r-level-booking-service-461711/booxiwi-repo/$APP_NAME:v1" \
+                     --port=8761 \
                      --platform=managed \
                      --allow-unauthenticated \
                      --concurrency=40 \
